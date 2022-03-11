@@ -16,6 +16,5 @@ r -[hidden]-> d
 
 Responsable -> r
 Entreprise -> d
-
 @enduml
 ```
