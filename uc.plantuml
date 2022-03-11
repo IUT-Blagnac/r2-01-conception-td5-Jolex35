@@ -7,7 +7,7 @@ actor Responsable
 actor Entreprise 
 
 'Pour aligner les 2 acteurs :
-r -[hidden]-> a
+r -[hidden]-> d
 
 Responsable -> r
 Entreprise -> d
