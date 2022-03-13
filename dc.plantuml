@@ -1,6 +1,7 @@
 @startuml dc
 
-class Entreprise {
+class Specialite {
+    nom
 }
 
 class Artisan {
@@ -21,8 +22,7 @@ class Travaille {
     double getPayeArtisan()
 }
 
-Entreprise "0..n" - Artisan
-Entreprise "0..n" - Chantier
+Specialite "0..n" - "1..n" Artisan
 Artisan "0..n" - "1..n" Chantier 
 (Artisan, Chantier) .. Travaille
 
