@@ -1,0 +1,29 @@
+@startuml dc
+
+class Specialite {
+    nom
+}
+
+class Artisan {
+    salaire_horaire
+    coordonnes
+}
+
+class Chantier {
+    date_début
+    date_fin
+    adresse
+}
+
+class Travaille {
+    Nombre_heure
+    Debut_mission
+    Fin_mission
+    double getPayeArtisan()
+}
+
+Specialite "0..n" - "1..n" Artisan
+Artisan "0..n" - "1..n" Chantier 
+(Artisan, Chantier) .. Travaille
+
+@enduml
